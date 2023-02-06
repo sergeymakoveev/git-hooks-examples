@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "types": [
+      "node",
+      "jest"
+    ],
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "outDir": "build",
+    "pretty": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "*": [
+        "lib/*",
+        "third-party-legacy/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "es6",
+      "scripthost",
+      "es2015.symbol",
+      "es2017.object",
+      "es2016.array.include"
+    ]
+  },
+  "include": [
+    "third-party-legacy/dx-ui/src/typings",
+    "third-party-legacy/**/*",
+    "src/**/*",
+    "./third-party-legacy/types.d.ts"
+  ],
+  "exclude": [
+    "./**/__tests__/*"
+  ]
+}
